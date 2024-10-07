@@ -83,3 +83,53 @@
     height: 2px; 
     background-color: black; 
 }
+.navbar {
+    width: max-content;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif; /* Font styling */
+    font-size: 1rem; /* Font size */
+    display: flex; /* Ensure navbar uses flexbox */
+    align-items: center; /* Center all items vertically */
+}
+
+.nav-btn {
+    display: flex; /* Make sure buttons are flex containers */
+    align-items: center; /* Center text and icon vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 2rem; /* Space between text and icon */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px; /* Consistent padding */
+    background-color: white;
+    line-height: 1.5; /* Ensure uniform line height */
+    text-align: left;
+}
+.navbar a {
+    text-decoration: none;
+    width: 15rem;
+
+}
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Button hover color */
+}
+
+.separator {
+    border-left: 1px solid #dfd5d5; 
+    height: 30px; 
+    margin: 0 10px; 
+    display: inline-block;
+}
+
+.search {
+    width: 3rem; /* Adjust as needed */
+    height: 3rem;
+    padding-left: 5rem; /* Adjust as needed */
+}
+.lower-head{
+    display: flex;               /* Use flexbox */
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Center content vertically, if needed */
+    height: 100px; 
+}
