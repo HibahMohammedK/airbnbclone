@@ -197,3 +197,49 @@
     height: 33px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.home {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto; 
+    justify-content: center; 
+    
+}
+.img-container {
+    width:max-content;
+    height: max-content;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows cards to wrap into multiple rows */
+    padding :0.8rem;
+}
+.home-img {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(25% - 30px);
+
+   
+}
+.home-img img {
+    border-radius: 10px;
+    width: 18.5rem;
+    height: 17rem;
+    
+}
+.img-container figcaption {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: rgb(102, 98, 98);
+}
+.initial-row{
+    padding-right: auto;
+}
+.pastexp {
+    width: max-content;
+    margin-left: 2rem;
+}
+.figspan {
+    font-size: 15px;
+    font-weight: 550;
+    color: rgba(56, 55, 55, 0.959);
+}
