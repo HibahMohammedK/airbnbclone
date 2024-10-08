@@ -1,4 +1,7 @@
-
+.body {
+    font-family: 'Nunito', sans-serif;
+    background: white;
+}
 .imglogo {
     width: 118px;
     height: 65px;
@@ -10,12 +13,8 @@
     gap: 2rem;
     padding-top: 1.5rem;
     padding-left: 27.5rem;
-    
     font-family: 'Nunito', sans-serif;
     font-weight: 450;
-    
-    
-
 }
 .navlink a {
     text-decoration: none;
@@ -60,7 +59,7 @@
 .user-btn {
    
     background: white;
-    border-radius: 25px;
+    border-radius: 50px;
     border: 1px solid rgb(206, 201, 201);
     width: 82px;
     height: 48px;
@@ -86,7 +85,7 @@
 .navbar {
     width: max-content;
     border: 1px solid rgb(207, 205, 205);
-    border-radius: 25px;
+    border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Nunito', sans-serif; /* Font styling */
     font-size: 1rem; /* Font size */
@@ -100,7 +99,7 @@
     justify-content: center; /* Center content horizontally */
     gap: 2rem; /* Space between text and icon */
     border: none;
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 10px 20px; /* Consistent padding */
     background-color: white;
     line-height: 1.5; /* Ensure uniform line height */
@@ -132,4 +131,69 @@
     justify-content: center;     /* Center content horizontally */
     align-items: center;         /* Center content vertically, if needed */
     height: 100px; 
+}
+.hr{
+    border: none;
+    height: 1px;
+    background-color: #d4d6d8;
+    margin: 20px 0; 
+}
+    
+.icon-row-container {
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: max-content
+   
+}
+.icon-row {
+    display: flex;
+    scroll-behavior: smooth;
+    
+
+}
+.icon {
+   
+    flex: 0 0 auto; 
+    text-align: center;
+    margin: 0 10px;
+    font-size: 13px;
+}
+.icon img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.scroll-arrow {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: auto;
+    top: 50%;
+    border: 1px solid rgb(206, 201, 201);
+}
+.scroll-arrow img {
+    width: 25px;
+    height: 20px;
+}
+.scroll-arrow:active {
+    transform: translateY(-50%) translateZ(0) scale(0.85);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+.scroll-arrow:hover {
+    width: 33px;
+    height: 33px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
