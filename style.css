@@ -2,6 +2,12 @@
     font-family: 'Nunito', sans-serif;
     background: white;
 }
+.header {
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: white; 
+}
 .imglogo {
     width: 118px;
     height: 65px;
@@ -181,13 +187,7 @@
     width: 25px;
     height: 20px;
 }
-.scroll-arrow:active {
-    transform: translateY(-50%) translateZ(0) scale(0.85);
-}
 
-.left-arrow {
-    left: 0;
-}
 
 .right-arrow {
     right: 0;
@@ -242,4 +242,86 @@
     font-size: 15px;
     font-weight: 550;
     color: rgba(56, 55, 55, 0.959);
+}
+.footer {
+    background: rgb(240, 239, 239);
+    width: 100%;
+    
+    padding-left: 2.1rem;
+}
+.footer h1 {
+    font-size: 22px;
+    padding-top: 3rem;
+    color: rgb(37, 37, 37);
+}
+.footer-navbar {
+    padding-left: 0; /* Ensure the container starts from the very left */
+    font-size: 15px;
+   
+}
+
+.nav {
+    display: flex; /* Arrange p elements in a row */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    gap: 1rem;
+    color: rgb(138, 136, 136);
+    font-weight: 550;
+}
+.nav-list {
+    margin-right: 15px; /* Space between items */
+    cursor: pointer; /* Make it look clickable */
+}
+.foot-row1 {
+    display: flex;
+    gap: 6rem;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(87, 85, 85);
+}
+.frow1cols span {
+    color: rgb(66, 65, 65);
+    font-weight: 550;
+    
+}
+.foot-row2 {
+    display: flex;
+    gap: 14rem;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+}
+
+.frow2cols span {
+    color: rgb(43, 42, 42);
+    font-weight: 550;
+}
+.footer-row3 ,.frow3 {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+.frow3 p {
+    position: relative; /* Needed for absolute positioning of the dot */
+    padding-left: 15px; /* Space for the dot */
+}
+.frow3 p::before {
+    content: '•'; /* The dot character */
+    position: absolute; /* Positioning it relative to the p element */
+    left: 0; /* Aligning it to the left */
+    color: rgb(48, 47, 47); /* Dot color */
+    font-size: 14px; /* Dot size */
+}
+.frow3col2 img {
+    width: 1rem;
+    height: 1rem;
+}
+.frow3col2 {
+    display: flex;
+    margin-left: auto; 
+    gap: 1rem;
+    align-items: center;
+    color: rgb(43, 42, 42);
+    font-weight: 550;
 }
